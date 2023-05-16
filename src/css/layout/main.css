@@ -1,0 +1,38 @@
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 8fr 1fr;
+  grid-template-areas:
+    "Controls Information"
+    "Game     Game"
+    "Dice     LeaderBoard";
+}
+
+.main-grid__game {
+  grid-area: Game;
+}
+
+.controls-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.information-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.game-grid {
+  display: grid;
+  /* need a grid auto for 100 buttons */
+}
+
+.dice-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.leaderboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}

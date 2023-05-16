@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
+    <title>Array Game</title>
+  </head>
+  <body class="body body-grid">
+    <header class="header body-grid__header header-grid">
+      <nav class="nav header-grid__nav nav-grid">
+        <button class="nav__button nav__button--off">Menu</button>
+        <button class="nav__button">Single Player</button>
+        <button class="nav__button">Player vs Player</button>
+        <button class="nav__button">Rules</button>
+      </nav>
+      <h1 class="title header-grid__title">Array Game</h1>
+    </header>
+    <main class="main body-grid__main main-grid">
+      <section aria-label="Game Controls" class="controls main-grid__controls controls-grid">
+        <div class="controls-grid__column">
+          <button class="controls__button">New Game</button>
+          <button class="controls__button">Choose Color</button>
+        </div>
+        <div class="controls-grid__column">
+          <button class="controls__button">Reset Array</button>
+          <button class="controls__button">Confirm Array</button>
+        </div>
+        <div class="controls-grid__column">
+          <button class="controls__button">Roll Dice</button>
+        </div>
+      </section>
+      <section
+        aria-label="Player Information"
+        class="information main-grid__information information-grid"
+      >
+        <div class="information-grid__column">
+          <p></p>
+          <p></p>
+        </div>
+        <div class="information-grid__column">
+          <p></p>
+          <p></p>
+        </div>
+        <div class="information-grid__column">
+          <p></p>
+          <p></p>
+        </div>
+      </section>
+      <section aria-label="Game Grid" class="game main-grid__game game-grid"></section>
+      <section aria-label="Game Dice Rolls" class="dice main-grid__dice dice-grid">
+        <div class="dice-grid__column"></div>
+        <div class="dice-grid__column"></div>
+      </section>
+      <section aria-label="Leaderboard" class="leaderboard main-grid__leaderboard leaderboard-grid">
+        <div class="leaderboard-grid__column"></div>
+        <div class="leaderboard-grid__column"></div>
+        <div class="leaderboard-grid__column"></div>
+      </section>
+    </main>
+    <footer class="footer body-grid__footer"></footer>
+  </body>
+</html>
