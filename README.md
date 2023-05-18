@@ -3,10 +3,10 @@
 ## File Structure:
 1. V44-TIER1-TEAM-03
   1. .github\ISSUE_TEMPLATE
-    - but-remport-template.md
-    - epic-template.md
-    - task-template.md
-    - user-story-template.md
+      - but-remport-template.md
+      - epic-template.md
+      - task-template.md
+      - user-story-template.md
   2. src
     1. css
       - layout
