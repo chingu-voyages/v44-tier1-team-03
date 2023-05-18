@@ -2,24 +2,7 @@
 
 ## File Structure:
 1. V44-TIER1-TEAM-03
-  1. .github\ISSUE_TEMPLATE
-      - but-remport-template.md
-      - epic-template.md
-      - task-template.md
-      - user-story-template.md
-  2. src
-    1. css
-      - layout
-        - body.css
-        - footer.css
-        - header.css
-        - main.css
-      - styles
-      - reset.css
-    2. index.html
-    3. javascript.js
-    4. main.css
-  3. README.md
+  1. 
 
 ## HTML/CSS/JavaScript Structure:
 
