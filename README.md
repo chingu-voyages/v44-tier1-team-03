@@ -2,7 +2,7 @@
 
 ## File Structure:
 1. V44-TIER1-TEAM-03
-  1. 
+   1. 
 
 ## HTML/CSS/JavaScript Structure:
 
