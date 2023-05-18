@@ -19,7 +19,7 @@
     2. index.html
     3. javascript.js
     4. main.css
-  4. README.md
+  3. README.md
 
 ## HTML/CSS/JavaScript Structure:
 
