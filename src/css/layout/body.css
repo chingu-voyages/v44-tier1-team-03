@@ -1,0 +1,12 @@
+
+.body-grid {
+  margin: auto;
+  max-width: 700px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 8rem 90vh 8rem;
+  grid-template-areas:
+  "Header"
+  "Main"
+  "Footer";
+}

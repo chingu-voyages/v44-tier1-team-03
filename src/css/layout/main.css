@@ -1,0 +1,59 @@
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 8fr 1fr;
+  grid-template-areas:
+    "Controls Information"
+    "Game     Game"
+    "Dice     LeaderBoard";
+}
+
+.main-grid__game {
+  grid-area: Game;
+}
+
+.controls-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.controls-grid__button {
+  place-self: center;
+}
+
+.grid-column {
+  display: grid;
+  /* currently for items in side each grid
+  column can be self aligned as needed,
+  controls all divs in each section. */
+}
+
+.information-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.information-grid__p {
+  place-self: center;
+}
+
+.game-grid {
+  display: grid;
+  /* need a grid auto for 100 buttons */
+}
+
+.dice-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.dice-grid__column {
+  place-self: center;
+}
+
+.leaderboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
