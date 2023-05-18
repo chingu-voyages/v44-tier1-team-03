@@ -6,8 +6,17 @@
   "Menu Title";
 }
 
+.header-grid__title {
+  place-self: center start;
+}
+
 .nav-grid {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 1fr);
 }
+
+.nav-grid__button {
+  place-self: center start;
+}
+
