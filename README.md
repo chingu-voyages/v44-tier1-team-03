@@ -1,14 +1,14 @@
-# voyage-tasks
+# Array-Game
 
-Your project's `readme` is as important to success as your code. For 
-this reason you should put as much care into its creation and maintenance
-as you would any other component of the application.
+## HTML/CSS/JavaScript Structure:
 
-If you are unsure of what should go into the `readme` let this article,
-written by an experienced Chingu, be your starting point - 
-[Keys to a well written README](https://tinyurl.com/yk3wubft).
+This uses the BEM Methodology (Block, Element, Modifier).
 
-And before we go there's "one more thing"! Once you decide what to include
-in your `readme` feel free to replace the text we've provided here.
+HTML tags have a few classes first a specific name i.e. menu, single-player, player-player etc... to be used for JavaScript purposes.
 
-> Own it & Make it your Own!
+For the grid layout HTML tags have class names of tag-use or for example body-grid for the main grid of that section. Then each element within has tag-use__tag for each section of the grid body-grid__main for the purpose of any movement of items within that may be needed. The body clasess are within the css/layout/body.css file, header classes and any direct child is in the css/layout/header.css file etc...
+
+
+
+
+
