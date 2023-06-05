@@ -11,25 +11,64 @@
   <body class="body body-grid">
     <header class="header body-grid__header header-grid">
       <nav class="nav header-grid__nav nav-grid">
-        <button class="menu nav-grid__button nav__button nav__button--off">Menu</button>
-        <button class="single-player nav-grid__button nav__button">Single Player</button>
-        <button class="player-player nav-grid__button nav__button">Player vs Player</button>
-        <button class="rules nav-grid__button nav__button">Rules</button>
+        <button
+          data-open-menu
+          class="nav-grid__button nav__button nav__button--off"
+        >
+          Menu
+        </button>
+        <dialog data-menu-modal class="nav-menu__modal">
+          <div class="nav-grid__menu">
+            <button class="single-player nav-grid__button nav__button">
+              Single Player
+            </button>
+            <button class="player-player nav-grid__button nav__button">
+              Player vs Player
+            </button>
+            <button data-open-rules class="rules nav-grid__button nav__button">
+              Rules
+            </button>
+            <dialog data-rules-modal>
+              <p>Rules</p>
+              <p>Objective:</p>
+              <p>To shade in as much of your grid as possible, according to the rules. </p>
+              <p>Single Player Rules:</p>
+              <p>Two Player Rules:</p>
+              <button data-close-rules class="nav__button">Close</button>
+            </dialog>
+            <button data-close-menu class="nav-grid__button nav__button">
+              Close
+            </button>
+          </div>
+        </dialog>
       </nav>
       <h1 class="title header-grid__title">Array Game</h1>
     </header>
     <main class="main body-grid__main main-grid">
-      <section aria-label="Game Controls" class="controls main-grid__controls controls-grid">
+      <section
+        aria-label="Game Controls"
+        class="controls main-grid__controls controls-grid"
+      >
         <div class="grid-column controls-grid__column">
-          <button class="menu controls-grid__button controls__button">New Game</button>
-          <button class="choose-color controls-grid__button controls__button">Choose Color</button>
+          <button class="menu controls-grid__button controls__button">
+            New Game
+          </button>
+          <button class="choose-color controls-grid__button controls__button">
+            Choose Color
+          </button>
         </div>
         <div class="grid-column controls-grid__column">
-          <button class="reset-array controls-grid__button controls__button">Reset Array</button>
-          <button class="confirm-array controls-grid__button controls__button">Confirm Array</button>
+          <button class="reset-array controls-grid__button controls__button">
+            Reset Array
+          </button>
+          <button class="confirm-array controls-grid__button controls__button">
+            Confirm Array
+          </button>
         </div>
         <div class="grid-column controls-grid__column">
-          <button class="roll-dice controls-grid__button controls__button">Roll Dice</button>
+          <button class="roll-dice controls-grid__button controls__button">
+            Roll Dice
+          </button>
         </div>
       </section>
       <section
@@ -38,23 +77,36 @@
       >
         <div class="grid-column information-grid__column">
           <p class="information-grid__p">Player One</p>
-          <p class="information-grid__p">Score: <span class="player-one-score"></span></p>
+          <p class="information-grid__p">
+            Score: <span class="player-one-score"></span>
+          </p>
         </div>
         <div class="grid-column information-grid__column">
-          <p class="information-grid__p">Current Player: </p>
+          <p class="information-grid__p">Current Player:</p>
           <p class="information-grid__p">X</p>
         </div>
         <div class="grid-column information-grid__column">
           <p class="information-grid__p">Player Two</p>
-          <p class="information-grid__p">Score: <span class="player-two-score"></span></p>
+          <p class="information-grid__p">
+            Score: <span class="player-two-score"></span>
+          </p>
         </div>
       </section>
-      <section aria-label="Game Grid" class="game main-grid__game game-grid"></section>
-      <section aria-label="Game Dice Rolls" class="dice main-grid__dice dice-grid">
+      <section
+        aria-label="Game Grid"
+        class="game main-grid__game game-grid"
+      ></section>
+      <section
+        aria-label="Game Dice Rolls"
+        class="dice main-grid__dice dice-grid"
+      >
         <div class="dice grid-column dice-grid__column"></div>
         <div class="dice grid-column dice-grid__column"></div>
       </section>
-      <section aria-label="Leaderboard" class="leaderboard main-grid__leaderboard leaderboard-grid">
+      <section
+        aria-label="Leaderboard"
+        class="leaderboard main-grid__leaderboard leaderboard-grid"
+      >
         <div class="grid-column leaderboard-grid__column"></div>
         <div class="grid-column leaderboard-grid__column"></div>
         <div class="grid-column leaderboard-grid__column"></div>
