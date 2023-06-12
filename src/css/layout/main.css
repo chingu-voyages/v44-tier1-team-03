@@ -39,7 +39,8 @@
 
 .game-grid {
   display: grid;
-  /* need a grid auto for 100 buttons */
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
 }
 
 .dice-grid {
@@ -55,5 +56,3 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-
-
