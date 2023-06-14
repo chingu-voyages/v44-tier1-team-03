@@ -1,0 +1,30 @@
+.header-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "Menu Title";
+}
+
+.header-grid__title {
+  place-self: center start;
+}
+
+.nav-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.nav-grid__button {
+  place-self: center start;
+}
+
+.nav-grid__menu {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 0.4rem;
+}
+
+.nav-menu__modal {
+  top: 2rem;
+  right: 34rem;
+}
